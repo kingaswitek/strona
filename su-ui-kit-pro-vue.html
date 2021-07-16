@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utp-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<link href="css/fontello.css" rel="stylesheet" type="text/css"/>
+
+<link rel="icon" href="favicon.ico">
+<title>sb-ui-kit-pro-vue</title>
+<style>
+body
+{
+    background-color: rgba(42, 91, 235, 1);
+    background-image: linear-gradient(155deg, rgba(42, 91, 235, 1) 0%, rgba(87, 36, 119, 1) 100%);
+
+    width: auto;
+    height: auto;
+    margin: 0 !important;
+    font-family: Metropolis,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    
+    
+}
+#container
+{
+    
+    width: 100%;
+    font-family: Metropolis,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  
+   
+}
+
+#home
+{
+    background-color: rgba(42, 91, 235, 1);
+    background-image: linear-gradient(155deg, rgba(42, 91, 235, 1) 0%, rgba(87, 36, 119, 1) 100%);
+    
+    
+}
+
+.nav
+{
+    
+    width: 100%;
+    padding-top: 15px;
+    text-align: center;
+    font-family: Metropolis,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo
+{
+    float: left;
+    color: white;
+    margin-left: 150px;
+    margin-bottom: 35px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 15px;
+    
+    
+}
+
+#bookmarks
+{
+    float: left;
+    color: white;
+    text-align: center;
+    margin-left: 270px;
+    word-spacing: 30px;
+    margin-top: 5px;
+    
+}
+#header
+{
+    width: 100%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+   
+  
+}
+#content
+{
+    color: white;
+    margin-top: 200px;
+    text-align: justify;
+    font-family: Metropolis,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+   
+    
+}
+
+#center 
+{
+    margin-top: 100px;
+}
+#header-text
+{
+    float: left;
+    color: white;
+    text-align: justify;
+    width: auto;
+    margin-left: 170px;
+   
+}
+#header-img
+{
+    float: left;
+    width: 500px;
+    height: 320px;
+    margin-left: 100px;
+}
+.sticky 
+{
+    width: 100%;
+    position: fixed;
+    background-attachment: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background-color: #1f2d41;
+}
+
+ol
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: inline-block;
+    line-height: 200%;
+}
+
+ol a
+{
+    color: #eff3f9; 
+    font-weight: bold; 
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+}
+
+ol > li
+{
+    float: left;
+    width: 70px;
+    padding: 20px;
+}
+
+button
+{
+    background-color:#00ba94; 
+    
+    text-align: center; 
+    margin-left: 70px; 
+    font-weight: bold; 
+    color: white; 
+    border-radius: 30px; 
+    width: 150px; 
+    height: 50px; 
+    border: 30px;
+    cursor: pointer; 
+    font-family: Metropolis,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
+#shortcut
+{
+    background-color: white;
+    width: auto;
+    height: 265px;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    text-align: center;
+    
+}
+
+#set
+{
+    width: 1140px;
+    height: 300px;
+    padding-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#one
+{
+    float: left;
+    width: 364px;
+    height: 208px;
+    text-align: center;
+}
+
+#two
+{
+    float: left;
+    width: 364px;
+    height: 208px;
+    text-align: center;
+}
+
+
+  
+#three
+{
+    float: left;
+    width: 364px;
+    height: 208px;
+    text-align: center;
+}
+
+#expansion
+{
+    clear: both;
+    width: auto;
+    height: 665px;
+    background-color: #eff3f9;
+    padding-top: 100px;
+    
+}
+
+#expansion-img
+{
+    float: left;
+    margin-left: 50px;
+}
+
+#expansion-text
+{
+    float: left;
+    text-align: left;
+    margin-left: 30px;
+    width: auto;
+    height: auto;
+}
+
+#sample-pages
+{
+
+    
+}
+
+#window-one
+{
+    float: left;
+    width: 273px; 
+    height: 122px;
+}
+
+#window-two
+{
+    float: left;
+    width: 273px; 
+    height: 122px;
+    margin-left: 10px;
+
+}
+
+#window-three
+{
+    clear: both;
+    float: left;
+    width: 273px; 
+    height: 122px;
+    margin-top: 30px;
+}
+
+#window-four
+{
+    float: left;
+    margin-top: 30px;
+    width: 273px; 
+    height: 122px;
+    margin-left: 10px;
+}
+
+#pricing
+{
+    clear:both;
+    height: 574px;
+    width: auto;
+    background-color: #eff3f9 !important ;
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 0;
+    
+}
+
+hr
+{
+    margin: 0 !important;
+    background-color: #eff3f9!important;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+#simple-pricing
+{
+    
+
+}
+
+#pricing-text
+{
+    padding-bottom: 100px;
+    background-color:#eff3f9 ;
+    
+
+}
+
+#range
+{
+    margin-left: 200px;
+    background-color:#eff3f9 ;
+    
+}
+
+#range-one
+{
+    width: 364px;
+    height: 370px;
+    float: left;
+    text-align: center;
+    background-color:#eff3f9 ;
+
+    
+}
+
+#range-two
+{
+    width: 364px;
+    height: 370px;
+    float: left;
+    background-color:#eff3f9 ;
+    text-align: left;
+}
+
+#range-three
+{
+    width: 364px;
+    height: 370px;
+    float: left;
+    background-color:#eff3f9 ;
+    text-align: left;
+}
+
+#card-one
+{
+    width: 316px;
+    height: 370px;
+    margin-bottom: -6px;
+    background-color: white;
+    text-align: left;
+
+}
+
+#card-two
+{
+    width: 316px;
+    height: 370px;
+    background-color: white;
+
+}
+
+#card-three
+{
+    width: 316px;
+    height: 370px;
+    background-color: white;
+
+}
+
+#questions
+{
+    width: auto;
+    height: 865px;
+    background-color: #1f2d41 ;
+    color: white;
+}
+
+#que-text
+{
+   padding: 300px;
+}
+
+#qone
+{
+    float: left;
+    padding: 50px;
+    
+}
+
+#qtwo
+{
+    float: left;
+    padding: 50px;
+}
+
+#qthree
+{
+    clear:both;
+    float: left;
+    padding: 50px;
+}
+#qfour
+{
+    float: left;
+    padding: 50px;
+}
+</style>
+
+</head>
+<body>
+
+    <div id="container"> 
+      
+      <div id="home">
+            <div class="nav" >
+        
+                    <div id="logo">
+                       SB UI Kit Pro
+                    </div>
+                  <div id="bookmarks">
+                        <ol>
+                            <li><a href="#">Home
+                               <i class="icon-angle-right"></i>
+                                </a></li>
+                            <li><a href="#">Landings
+                                 <i class="icon-angle-right"></i>
+                                </a></li>
+                            <li><a href="#">Pages
+                                <i class="icon-angle-right"></i>
+                                </a></li>
+                            <li><a href="#">Documentation
+                                <i class="icon-angle-right"></i>
+                                </a></li>
+                        </ol>   
+            
+                        <button type="button" style="float: right !important;" >BUY NOW
+                        <i class="icon-right-small"></i>
+                        </button>
+                  </div>  
+         </div> 
+        
+    
+    
+          <div id="header">
+                <div id="content">
+                    <div id="center">
+                       <div id="header-text">
+                         <h1 style="font-size: 40px; text-align: justify;">Build your next project<br/> faster with SB UI Kit Pro</h1>
+                          <a> Welcome to SB UI Kit Pro, a toolkit for building<br/> beautiful web interfaces, created by the developmet team at<br/> Start Bootstrap<br/><br/></a>
+                      
+                           <button type="button" style=" float: left !important; margin-top: 20px; " >VIEW DEMO
+                              <i class="icon-right-small"></i>
+                    
+                            </button>
+
+                          <a style="margin-left: 60px; margin-top: 30px; cursor: pointer; text-align: center; float: left ;font-weight: bold; font-family: Metropolis,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;">DOCUMENTATION</a>
+                       </div>
+                            <div id="header-img">
+                               <img src="img.svg">
+                   
+                            </div>
+                    </div> 
+               </div>   
+          </div>  
+            
+            <div class="path" style=" height: 48px; width: auto;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="white" style="width: 1519px; height: 48px; margin-top: 0; " >
+                  <path  d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0">
+    
+                  </path>
+                </svg>
+        
+            </div>     
+      
+        </div>
+
+       
+      
+        <div id="shortcut">
+            <div id="set">
+                <div id="one">
+                    <div  class="icon-stack icon-stack-xl bg-gradient-primary-to-secondary text-white mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"  style=" width: 30px; height: 30px; border-radius:100%; padding: 30px; background-image: linear-gradient(135deg,#0061f2,rgba(105,0,199,.8));">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                            <polyline points="2 17 12 22 22 17"></polyline>
+                            <polyline points="2 12 12 17 22 12"></polyline>
+                        </svg>
+                     </div>
+                     <h2>Built for developers</h2>
+                        <a>Our customizable, block-based build system makes creating your next project fast and easy!</a>
+                </div>
+                
+                <div id="two">
+                    <div  class="icon-stack icon-stack-xl bg-gradient-primary-to-secondary text-white mb-4">
+                        <svg  xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="width: 30px; height: 30px; border-radius: 100%; padding: 30px; background-image: linear-gradient(135deg,#0061f2,rgba(105,0,199,.8));">
+                            <rect  x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                            <line  x1="12" y1="18" x2="12.01" y2="18"></line>
+                        </svg>
+                    </div>
+                    <h3>Modern responsive design</h3>
+                        <a>Featuring carefully crafted, mobile-first components, your end product will function beautifully on any device!</a>
+
+                </div>
+
+                <div id="three">
+                    <div  class="icon-stack icon-stack-xl bg-gradient-primary-to-secondary text-white mb-4">
+                        <svg  xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-code" style="width: 30px; height: 30px; border-radius: 100%; padding: 30px; background-image: linear-gradient(135deg,#0061f2,rgba(105,0,199,.8));">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline  points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h4>Complete documentation</h4>
+                    <a>All of the layouts, page sections, components, and utilities are fully covered in this products docs.</a>
+
+                </div>
+                    
+                
+            </div>
+
+        </div>
+
+                <div class="path" style=" height: 48px; background-color: white;">
+                  <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="#eff3f9" style="width:  1519px; height: 48px; margin-bottom: 0 ;">
+                     <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
+                  </svg>
+                </div>
+
+
+        <div id="expansion">
+            <div id="expansion-img" >
+                <img  src="landing-app-desktop.jpg" style="border-radius: 5px !important; box-sizing: border-box; border-color: #c5ccd6 !important; border-left-width: 25px !important; box-shadow: 0 1rem 3rem rgba(150, 111, 111, 0.175)!important; border-left: 1px solid #e3e6ec!important;">
+            </div>
+        <div id="expansion-text">
+            <div id="lead">
+                <h5 style="font-size: 16px;">Here's What You Get</h5> 
+                <a><br/>When you purchase this UI Kit, you get access to a robust <br/>suite of powerful tools and components to help you build your next landing<br/> page quickly and easily.<br/></a>
+            </div>
+                <div id="sample-pages">
+                    <div id="window-one" >
+                        <h6 style="font-size: 16px; text-align: justify;">Landing Pages</h6>
+                        <a>We've crafted landing page examples for many popular business and product types.<br/>Learn More</a>
+                    </div>
+                    
+                    <div id="window-two" >
+                        <h6 style="font-size: 16px;">Page Examples</h6>
+                        <a>Use our pre-built page examples to quickly create inner pages to your website.<br/>Learn More</a>
+
+                    </div>
+                    
+                    <div id="window-three" >
+                        <h6 style="font-size: 16px;">Layouts</h6>
+                        <a>Our flex box based layout options make your site beautifully responsive and adaptable to any device.<br/>Learn More</a>
+
+                    </div>
+                    
+                    <div id="window-four" >
+                        <h6 style="font-size: 16px;">Modular Sections</h6>
+                        <a>All of the sections on each page are modular, so you can drop them into an existing page, or start with a new one!<br/>Learn More</a>
+
+                    </div>
+
+
+                </div>
+                
+            </div>
+            
+        </div>
+                 <hr>
+
+        
+                <div id="pricing">
+                    <div id="simple-pricing">
+                        <div id="pricing-text">
+                            <h2> Simple Pricing </h2>
+                            <a>Easy pricing means no suprises.</a>    
+                        </div>
+                        <div id="range">
+                            <div id="range-one">
+                                <div id="card-one">
+                                   <div id="Free">Free
+
+                                   </div>    
+                                    <div class="pricing-prize">$0/mo</div>
+                            
+                                    <ul style="list-style-type: none;">
+                                        <li>1 user</li>
+                                        <li>Community support</li>
+                                        <li>Style customizer</li>
+                                        <li>Custom components</li>
+                                        <li>Expanded utilities</li>
+                                        <li>Third-party integration</li>
+                                        <li>Layout options</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div id="range-two">
+                                <div id="card-two">
+                                    <div id="Standard">Standard</div>    
+                                       <div class="pricing-prize">$19/mo
+                                       </div>
+                                        <ul style="list-style-type: none;">    
+                                            <li>Up to 15 users</li>
+                                            <li>Email and live chat support</li>
+                                            <li>Style customizer</li>
+                                            <li>Custom components</li>
+                                            <li>Expanded utilities</li>
+                                            <li>Third-party integration</li>
+                                            <li>Layout options</li>
+                                       </ul>
+                                </div>
+                                
+                            </div>
+                            <div id="range-three">
+                                <div id="card-two">
+                                   <div id="Enterprise">Enterprise</div>
+                                   <p>We offer bulk discounts for larger organizations. Contact us to set up an enterprise level plan!</p>
+                                </div>
+                            </div>
+                        </div>                      
+                    </div>
+                     
+                      <div class="svg-border-rounded text-dark" style="background-color: #eff3f9; height: 48px; width: auto;">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="#1f2d41" style="background-color: #eff3f9; height: 48px; width: 1519px; margin-bottom: 0;">
+                                <path  d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0">
+    
+                                </path>
+                            </svg>
+                       </div>
+                    
+                </div>
+                
+                <div id="questions">
+                    <div id="main">
+                        <div id="que-text">
+
+                            <div id="qone">
+                               <h5>Can I use SB UI Kit Pro for clients?</h5>
+                               <a>Yes! You can use SB UI Kit Pro for client<br/> projects. There are two types of licenses available<br/> depending on what you're trying to do.</a>
+                            </div>
+                            <div id="qtwo">
+                                <h5>Is there a money back guarantee?</h5>
+                                <a>Yes! If you're not happy with your product then <br/>we will give you your money back.</a>
+                            </div>
+                            <div id="qthree">
+                                <h5>Do I get free updates?</h5>
+                                <a>All of Start Bootstrap's premium products<br/> will come with updates for feature <br/>additions, bugfixes, and other small updates.</a>
+                            </div>
+                            <div id="qfour">
+                                <h5>Does it work front end frameworks?</h5>
+                                <a>When purchasing an HTML based product<br/> from Start Bootstrap,you get the HTML <br/>and CSS which you can bring <br/>into any framework.</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+    </div>
+
+                                      
+  <script src="jquery-1.11.3.min.js"></script>
+  
+	
+<script>
+
+	$(document).ready(function() {
+	var NavY = $('.nav').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.nav').addClass('sticky');
+	} else {
+		$('.nav').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+        
+	});
+	});
+
+</script>
+
+                            
+</body>
+
+</html>
